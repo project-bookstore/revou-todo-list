@@ -1,0 +1,130 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1,6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+.container{
+    max-width: 500px;
+    margin: auto;
+    background: linear-gradient(135deg, #021591 0%, #cbc7c7 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    color: #fffdfd;
+}
+#todo-form{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+#todo-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #add;
+    border-radius: 4px;
+}
+#todo-form button{
+    padding: 10px 20px;
+    background-color: rgb(81, 225, 28);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#todo-form button:hover{
+    background-color: #45a049;
+}
+.filter-section{
+    margin-bottom: 20px;
+}
+.filter-controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fil
+.filter-controls h3{
+    margin: 0;
+    font: 1em sans-serif;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+}
+#filter-select{
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #add;
+    width: 30%;
+    font-size: 15px;
+    min-width: 120px;
+}
+.delete-all-btn{
+    margin-left: 40%;
+    width: 30%;
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.delete-all-btn:hover{
+    background-color: #d32f2f;
+}
+.todo-list{
+    margin-bottom: 20px;
+}
+.list-header{
+    display: flex;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 1px solid #add;
+}
+.list-header span{
+    flex:1;
+}
+.todo-item{
+    display: flex;
+    align-items: center;
+    padding: 10 px 0;
+    border-radius: 1 px solid #eee;
+}
+.todo-item completed{
+    background-color: #f0f0f0;
+}
+.todo-item.completed .task-text{
+    text-decoration: line-through;
+    color: #888;
+}
+.actions {
+    float: 0.5;
+    display: flex;
+    justify-content:center ;
+    gap: 10px;
+}
+.actions button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.complete-btn{
+    background-color: #2196f3;
+    color: white;
+}
+.delete-btn{
+    background-color: #f44336;
+    color: white;
+}
+.no-taks{
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revou Project To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <form id="todo-form">
+            <input type="text" id="task" placeholder="add a to do" required>
+            <input type="date" id="date" required>
+            <button type="submit">Add</button>
+        </form>
+        <div class="filter-section">
+            <div class="filter-controls">
+            <h3>Filter</h3>
+            <select id="filter-select">
+                <option value="all">All</option>
+                <option value="completed">completed</option>
+                <option value="pending">Pending</option>
+            </select>
+            <button id="delete-all" class="delete-all-btn">DELETE ALL</button>
+        </div>
+    </div>
+    <div class="todo-list">
+        <div class="list-header">
+            <span class="task">TASK</span>
+            <span class="date">DUE DATE</span>
+            <span class="status">STATUS</span>
+            <span class="actions">ACTIONS</span>
+        </div>
+        <div id="todo-items">
+            <div class="no-taks">No Task Found</div>
+        </div>
+    </div>
+
+   
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
